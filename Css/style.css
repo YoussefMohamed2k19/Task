@@ -1,0 +1,372 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+html{overflow-x: hidden;}
+
+/*********LANDING PAGE*********/
+.navbar{
+    padding-top: 15px;
+}
+.navbar-brand{
+    font-weight: 700;
+    color: #000000;
+    font-size: 24px;
+}
+.navbar-brand span{
+    color: #407bff;
+}
+.container-fluid{
+    padding: 0;
+}
+.navbar-nav{
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.navbar-nav li:hover{
+    color: #000000;
+}
+.navbar-nav li{
+    margin: 7px;
+}
+a.button1 {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 22px;
+    margin: 0.2em;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    transition: all ease-in-out 0.3s;
+    color: rgba(0, 0, 0, 0.5);
+    background:transparent;
+}
+a.button1:hover{
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.5);;
+}
+a.button2 {
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 5px 22px;
+    margin: 0.2em;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    transition: all ease-in-out 0.3s;
+    color: #fff;
+    background: #407BFF;
+}
+.landing-box{
+    padding-top: 4rem;
+}
+.landing-title{
+    font-size: 70px;
+    line-height: 1;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.landing-paragraph{
+    color: #939393;
+    font-weight: 400;
+    font-size: 16px;
+}
+.landing-paragraph .highlight{
+    background: rgba(64, 123, 255, 0.07);
+    color: #407BFF;
+    text-decoration: none;
+}
+a.button3 {
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 15px 30px 15px 30px;
+    margin: 0.2em;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    transition: all ease-in-out 0.3s;
+    color: #fff;
+    text-transform: uppercase;
+    background: #407BFF;
+    letter-spacing: .05rem;
+}
+a.button4 {    
+    display: inline-block;
+    border: 1px solid  #007bff;
+    color: #007bff;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    transition: all ease-in-out 0.3s;
+    text-transform: uppercase;
+    background: transparent;
+    letter-spacing: .05rem;
+}
+a.button4:hover{
+    background-color: #007bff;
+    color: #fff;
+}
+
+/*********ABOUT SECTION*********/
+.about-section,.weather-section{
+    background-color: #F8F9FA;
+    padding: 70px 0px;
+}
+.about-title{
+    color: #407bff;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.about-heading{
+    font-size: 38px;
+    color: #000000;
+}
+.about-paragraph,
+.list-unstyled{
+    color: #939393;
+}
+.about-paragraph .highlight{
+    background: rgba(64, 123, 255, 0.07);
+    text-decoration: none;
+}
+.list-unstyled li{
+    margin-bottom: 15px;
+}
+.list-unstyled i{
+    margin-right: 10px;
+    color: #407bff;
+}
+.count-numbers .counter {
+    color: #000000;
+    font-size: 40px;
+}
+.count-numbers .caption-2 {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    color: #939393;
+}
+
+/*********WEATHER SECTION*********/
+.weather-section{
+    padding: 70px 0px 150px 0px;
+}
+.widget {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    height: 300px;
+    width: 600px;
+    transform: translate(-50%, 20%);
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+.widget .weatherIcon {
+    flex: 1 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #407BFF;
+    font-family: weathericons;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 100px;
+}
+.widget .weatherIcon i {
+    padding-top: 30px;
+}
+.widget .weatherInfo {
+    flex: 0 0 70%;
+    height: 40%;
+    background: #080705;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.widget .weatherInfo .temperature {
+    flex: 0 0 40%;
+    width: 100%;
+    font-size: 65px;
+    display: flex;
+    justify-content: space-around;
+}
+.widget .weatherInfo .description {
+    flex: 0 60%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.widget .weatherInfo .description .weatherCondition,
+.widget .weatherInfo .description .wind-speed {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+}
+.widget .weatherInfo .description .place {
+    font-size: 14px;
+}
+.widget .date {
+    flex: 0 0 30%;
+    height: 40%;
+    background: #203E80;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+.widget .weatherInfo .description .wind-speed{
+    font-size: 13px;
+}
+.weather-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+.weather-title p{
+    font-size: 16px;
+    color: #939393;
+    margin: 5px;
+}
+
+/*********CONTACT SECTION*********/
+.contact-us{
+    padding: 80px;
+}
+
+
+/*********FORM*********/
+.form-style-7{
+    margin-top: 50px;
+}
+.form-style-7 h1{
+	text-align: center;
+	padding: 0;
+	margin: 0px 0px 20px 0px;
+	color: #5C5C5C;
+	font-size:x-large;
+}
+.form-style-7 ul{
+	list-style:none;
+	padding:0;
+	margin:0;	
+}
+.form-style-7 li{
+	padding: 9px;
+	border:2px solid #e2e2e2;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+.form-style-7 li > label{
+    color: #717981;
+	display: block;
+	float: left;
+	margin-top: -19px;
+	background: white;
+	height: 14px;
+	padding: 0px 5px 2px 5px;
+	font-size: 12px;
+    overflow: hidden;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 textarea,
+.form-style-7 select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+    font-size: 16px;
+	padding: 0;
+}
+.form-style-7 li:hover {
+	border: 2px solid #407BFF;
+  transition: all .4s;
+}
+.form-style-7 textarea{
+    height: auto;
+}
+.form50{
+    display: inline-block;
+    width: 48.8%;
+}
+.form60{
+    display: inline-block;
+    width: 48.8%;
+    margin-left: 20px;
+}
+.form-style-7 li {
+    padding: 9px;
+    border: 2px solid #e2e2e2;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.fromboxed{
+    padding: 30px;
+}
+.fromboxed .btn-primary {
+    background-color: #407BFF;
+    border: none;
+}
+.fromboxed .btn-block {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 25px;
+    text-transform: unset !important;
+}
+.fromboxed .btn{
+    padding: .575rem .75rem;
+}
+
+
+a.button5 {    
+    display: inline-block;
+    border: 1px solid  #007bff;
+    color: #007bff;
+    padding: 20px 80px 20px 80px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    margin: auto 0;
+    transition: all ease-in-out 0.3s;
+    text-transform: uppercase;
+    background: transparent;
+    letter-spacing: .05rem;
+}
+a.button5:hover{
+    background-color: #007bff;
+    color: #fff;
+}

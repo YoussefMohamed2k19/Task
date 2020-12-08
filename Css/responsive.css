@@ -1,0 +1,48 @@
+
+@media only screen and (max-width: 767px) {
+    .button1, .button2{
+        display: none !important;
+    }
+    .navbar-nav li{
+        margin: 0;
+    }
+    .landing-title{
+        font-size: 55px;
+    }
+    .landing-paragraph{
+        font-size: 15px;
+    }
+    .cover-img{
+        max-width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .weather-title{
+        font-size: 24px;
+    }
+    .widget{
+        height: 200px;
+        width: 400px;
+    }
+    .form50, .form60{
+        width: 100%;
+        margin-left:0px;
+    }
+    .widget .weatherIcon{
+        width: 25%;
+    }
+    #degree{
+        font-size: 40px !important;
+    }
+    .widget .weatherInfo .description .temperature-description,.location-timezone{
+        font-size: 12px !important;
+    }
+}
+@media only screen and (max-width: 380px) {
+
+    .widget{
+        height: 200px;
+        width: 300px;
+    }
+}
