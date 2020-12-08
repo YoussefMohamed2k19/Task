@@ -38,6 +38,14 @@
     .widget .weatherInfo .description .temperature-description,.location-timezone{
         font-size: 12px !important;
     }
+    .counter1{
+        width: 50%;
+        float: left;
+    }
+    .counter2{
+        width: 50%;
+        float: right;
+    }
 }
 @media only screen and (max-width: 380px) {
 
