@@ -1,4 +1,4 @@
-#Task 
+Task 
 
 This was simple page with HTML5, CSS3, Bootstrap, JS, Jquery and using PWA.
 
