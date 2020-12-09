@@ -39,7 +39,7 @@ window.addEventListener("load", () => {
     let windSpeed = document.querySelector('.wind-text');
     const temperatureSpan = document.querySelector('.temperature span');
 
-    alert("Open Gps to allow site work,It's based on your geolocation.");
+    //alert("Open Gps to allow site work,It's based on your geolocation.");
     if(navigator.geolocation)
     {
       navigator.geolocation.getCurrentPosition(position => {
@@ -102,6 +102,17 @@ window.addEventListener("load", () => {
         .then(res => console.log("service worker registered"))
         .catch(err => console.log("service worker not registered", err))
     })
+
+    Notification.requestPermission(result => {
+      if (result === 'granted') {
+        navigator.serviceWorker.ready.then(registration => {
+          registration.showNotification('Hey!', {
+            body: 'Open Gps to allow site work,It is based on your geolocation.!',
+            tag: 'Hey!'
+          });
+        });
+      }
+    });
 }
 
   /*==================================================================
